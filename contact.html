@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            background-image: url(./images/hunt.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: relative;
+            right: 5px;
+            margin: 15px;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;            
+            position: absolute;
+            right: -10px;
+        }
+
+        li {
+            font-size: 13px;
+            text-align: center;    
+            display: inline;
+            margin: 5px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul li a:hover {
+            color: goldenrod;
+        }
+
+        ul li a:visited {
+            background-color: green;
+        }
+
+        .container {
+            position: relative;
+            top: 5rem;
+            width: 500px;
+            height: 130vh;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(0,0,0,0.5);
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .headBox {
+            margin: 2rem;
+            
+        }
+
+        .container img {
+            width: 100px;
+            height: auto;
+            -webkit-box-reflect: below 2px linear-gradient(to bottom ,rgb(0,0,0,0.0), rgb(0,0,0,0.1));
+        }
+
+        .userInput {
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        input[type=text] , input[type=Email] {
+            width: 200px;
+            border-radius: 100px;
+            padding: 5px 10px;
+        }
+        input[type=number] {
+            width: 50px;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 150px;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+
+        .option {
+            font-weight: 900;
+        }
+
+        textarea {
+            resize: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        input[type=submit] , input[type=reset]  {
+            background-color: rgb(0,0,0, 0.5);
+            color: white;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            transition: .2s ease-in-out;
+        }
+
+        input[type=submit]:hover , input[type=reset]:hover{
+            background-color: grey;
+        }
+
+        input[type=submit]:active , input[type=reset]:active{
+            background-color: red;
+            transition: nones;
+        }
+
+        footer {
+            position: relative;
+            left: 2%;
+            width: 97%;
+            height: 3rem;
+            margin-top: 7rem;
+            border-top: 2px solid white;
+        }
+
+        footer ul {
+            position: absolute;
+            top: 14px;
+            right: 0px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display:inline;
+            color: white;
+        }
+
+        @media screen and (max-width: 700px) {
+            li {
+                font-size: 10px;
+                width: 40px;
+            }
+            .container {
+                width: 300px;
+                height: 800px;
+            }
+            
+            input[type=text] {
+                width: 150px;
+            }
+
+            textarea {
+                width: 150px;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="headBox">
+            <img src="./images/NicePng_evil-png_840970.png" alt="logo">
+        </div>
+            <form>
+            <div class="leftLabel">
+                <label for="name">Your name</label>
+            </div>
+            <div class=userInput>
+                <input type="text" id="name" name="name" 
+                placeholder="Your name..." required maxlength="40" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="leftLabel">
+                <label for="lName">Last Name</label>
+            </div>
+            <div class=userInput>
+                <input type="text" id="lName" name="lName" placeholder="Last name..." autocomplete="off"
+                spellcheck="false">
+            </div>
+            <div class="leftLabel"> 
+                <label for="Gmail">Gmail</label>
+            </div>
+            <div class=userInput>
+                <input type="email" id="Gmail" name="Gmail" placeholder="Example@gmail.com" 
+                required spellcheck="false" autocomplete="off">
+            </div>
+            <div class="leftLabel"> 
+                <label for="age">Age</label>
+            </div>
+            <div class=userInput>
+                <input type="number" id="age" name="age" placeholder="age" 
+                required max="100" min="7" value="0">
+            </div>
+            <div class="leftLabel">
+                <label for="country">Country</label>
+            </div>
+            <div class="userInput">
+                <select id="country">
+                    <option class="option" value="Malaysia">Malaysia</option>
+                    <option class="option" value="Indonesia">Indonesia</option>
+                    <option class="option" value="Thailand">Thailand</option>
+                </select>
+            </div>
+            <div class="leftLabel">
+                <label for="country">Message</label>
+            </div>
+            <div class="userInput">
+                <textarea name="message" rows="10" cols="40" 
+                required placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="userInput">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>©2022</p>
+        <ul>
+            <li><img src="./images/discord.png"></li>
+            <li><img src="./images/reddit.png"></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
