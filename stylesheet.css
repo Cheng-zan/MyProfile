@@ -36,6 +36,34 @@ nav {
     position: fixed;
 }
 
+.headLeftTag > span > a {
+    position: fixed;
+    left: 20px;
+    line-height: 27px;
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.headLeftTag > span > a:hover {
+    color: goldenrod;
+}
+
+.headLeftTag > span > a:active {
+    color: gold;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
 ul {
     margin: 0;
     padding: 0;
