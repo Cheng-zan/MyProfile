@@ -167,7 +167,6 @@ section {
     width: 100%;
     height: 470px;
     background-color: gold;
-    border-radius: 20px;
     animation: box 2s 2s forwards;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
