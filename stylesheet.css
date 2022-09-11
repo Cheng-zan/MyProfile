@@ -1,11 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url('./images/stars.jpg');
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
-    padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -89,46 +91,47 @@ ul li a:hover {
 }
 
 .intro {
-    padding: 155px;
+    position: relative;
+    top: 15vh;
+    width: 750px;
+    height: 500px;
+    margin: auto;
 }
 
-.introBox {
+.firstTxt {
+    width: 0;
     overflow: hidden;
-    margin: auto;
+    height: 40%;
     text-align: center;
-    animation-name: introName;
-    animation-duration: 3.5s;
-    animation-fill-mode: forwards;
-}
-
-
-.intro .introBox p {
-    color: white;
-    white-space: nowrap;
-    animation-name: headColor;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    font-size: 150px;
-    font-family: Arial, Helvetica, sans-serif;
+    animation: txt1 1s linear forwards;
+    -webkit-animation: txt1 1s linear forwards;
     margin: auto;
 }
 
-@keyframes headColor {
-    0% {color:white;}
-    50% {color: silver;}
-    100% {color: white;}
+.secondTxt {
+    width: 0;
+    overflow: hidden;
+    height: 40%;
+    text-align: center;
+    animation:txt2 1s 0.5s linear forwards;
+    -webkit-animation:txt2 1s 0.5s linear forwards;
+    margin: auto;
 }
 
-@keyframes introName {
-    from{
-        width: 0px;
-    }
-    to {
-        width: 710px;
-    }
-    
+p > .char {
+    font-size: 150px;
+    color: white;
 }
 
+@keyframes  txt1{
+    from{width: 0;}
+    to {width: 750px;}
+}
+
+@keyframes txt2{
+    from {width: 0;}
+    to{width: 750px;}
+}
 
 @media screen and (max-width: 800px) {
     .webName span {
@@ -151,6 +154,7 @@ section {
     width: 100%;
     height: 500px;
     position: relative;
+    top: 15vh;
     z-index: -1;
 }
 
