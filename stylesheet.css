@@ -118,7 +118,7 @@ ul li a:hover {
     margin: auto;
 }
 
-p > .char {
+p {
     font-size: 150px;
     color: white;
 }
@@ -159,9 +159,10 @@ section {
 }
 
 .sectionBox {
-    width: 800px;
+    width: 820px;
     margin: auto;
     position: relative;
+    padding: 0% 5%;
 }
 
 .boxAnimated {
@@ -169,13 +170,15 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 470px;
+    height: 400px;
     background-color: gold;
-    animation: box 2s 2s forwards;
+    animation: box 2s forwards;
+    -webkit-animation: box 2s forwards;
 }
 
 
 section h1 {
+    margin: 20px;
     text-align: center;
     text-decoration: underline red;
     color: white;
