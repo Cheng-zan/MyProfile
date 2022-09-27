@@ -143,9 +143,6 @@ p {
         to {width: 250px;}
     }
     li {font-size: 12px; margin: 3px; }
-    .intro {clear: both; padding: 150px 0;}
-    .intro .introBox p {font-size: 50px;}
-    .introBox {width: 100%;}
 }
 
 section {
@@ -162,7 +159,7 @@ section {
     width: 820px;
     margin: auto;
     position: relative;
-    padding: 0% 5%;
+    padding: 2% 5%;
 }
 
 .boxAnimated {
@@ -177,10 +174,11 @@ section {
 }
 
 
-section h1 {
-    margin: 20px;
+.sectionBox h1 {
+    width: fit-content;
+    margin: auto;
     text-align: center;
-    text-decoration: underline red;
+    border-bottom: 5px solid goldenrod;
     color: white;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
@@ -188,8 +186,9 @@ section h1 {
 
 .sectionBox p {
     color: white;
-    font-size: 3vw;
+    font-size: 40px;
     text-align: justify;
+    margin: 10px;
 }
 
 @keyframes box {
