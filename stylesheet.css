@@ -28,7 +28,7 @@ body {
 
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: goldenrod; 
 }
 
 /*webName nav style in html.index*/
@@ -114,7 +114,6 @@ ul li a:hover {
     height: 40%;
     text-align: center;
     animation:txt2 1s 0.5s linear forwards;
-    -webkit-animation:txt2 1s 0.5s linear forwards;
     margin: auto;
 }
 
