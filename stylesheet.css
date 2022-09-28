@@ -1,6 +1,7 @@
-* {
+* , html , body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-image: url('./images/stars.jpg');
@@ -90,74 +91,57 @@ ul li a:hover {
     color: goldenrod;
 }
 
-.intro {
+.intro-box {
     position: relative;
-    top: 15vh;
-    width: 750px;
-    height: 500px;
+    width: 100%;
+    height: 400px;
     margin: auto;
+    border: 1px solid green;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .firstTxt {
-    width: 0;
-    overflow: hidden;
-    height: 40%;
     text-align: center;
-    animation: txt1 1s linear forwards;
-    -webkit-animation: txt1 1s linear forwards;
-    margin: auto;
+    border: 1px solid green;
+    width: 550px;
 }
 
 .secondTxt {
-    width: 0;
-    overflow: hidden;
-    height: 40%;
     text-align: center;
-    animation:txt2 1s 0.5s linear forwards;
-    margin: auto;
+    border: 1px solid green;
+    width: 550px;
 }
 
-p {
-    font-size: 150px;
+.txt {
     color: white;
+    font-size: 120px;
 }
 
-@keyframes  txt1{
-    from{width: 0;}
-    to {width: 750px;}
-}
-
-@keyframes txt2{
-    from {width: 0;}
-    to{width: 750px;}
-}
 
 @media screen and (max-width: 800px) {
     .webName span {
         font-size: 14px;
         line-height: 2.3;
     }
-    @keyframes introName {
-        from {width: 0px;}
-        to {width: 250px;}
-    }
     li {font-size: 12px; margin: 3px; }
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
+.section-wrapper {    
     position: relative;
-    top: 15vh;
+    width: 900px;
+    height: fit-content;
+    top: 70vh;
     z-index: -1;
+    margin: auto;
 }
 
 .sectionBox {
     width: 820px;
     margin: auto;
-    position: relative;
     padding: 2% 5%;
 }
 
@@ -191,7 +175,7 @@ section {
 }
 
 @keyframes box {
-    frpm{width: 100%;}
+    from{width: 100%;}
     to{width: 0;}
 }
 
