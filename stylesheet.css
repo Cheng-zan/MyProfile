@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('./images/stars.jpg');
+    background-image: url('./images/sars.jpg');
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -257,7 +257,7 @@ ul li a:hover {
 @media screen and (max-width: 600px){
     .section-wrapper {
         width: 470px;
-        top: 40vh;
+        top: 300px;
     }
     .boxAnimated {
         height: 260px;
