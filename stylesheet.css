@@ -154,7 +154,7 @@ ul li a:hover {
 
 @media screen and (max-width: 600px) {
     .intro-box {
-        width: 100%;
+        width: 450px;
         height: 400px;
         display: flex;
     }
@@ -257,7 +257,7 @@ ul li a:hover {
 @media screen and (max-width: 600px){
     .section-wrapper {
         border: 1px solid green;    
-        width: 350px;
+        width: 450px;
         top: 40vh;
     }
     .boxAnimated {
