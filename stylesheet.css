@@ -256,12 +256,11 @@ ul li a:hover {
 
 @media screen and (max-width: 600px){
     .section-wrapper {
-        border: 1px solid green;    
         width: 470px;
         top: 40vh;
     }
     .boxAnimated {
-        height: 230px;
+        height: 260px;
     }
     .sectionBox {
         width: 400px;
