@@ -257,7 +257,7 @@ ul li a:hover {
 @media screen and (max-width: 600px){
     .section-wrapper {
         border: 1px solid green;    
-        width: 100%;
+        width: 350px;
         top: 40vh;
     }
     .boxAnimated {
