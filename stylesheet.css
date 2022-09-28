@@ -93,11 +93,9 @@ ul li a:hover {
 
 .intro-box {
     position: relative;
+    top: 20vh;
     width: 100%;
     height: 400px;
-    margin: auto;
-    border: 1px solid green;
-    top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,15 +103,47 @@ ul li a:hover {
 }
 
 .firstTxt {
+    position: relative;
     text-align: center;
-    border: 1px solid green;
     width: 550px;
+
+}
+
+.box-animated-ftxt {
+    position: absolute;
+    height: 140px;
+    background-color: gold;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 1000;
+    animation: ftxt 2s forwards;
+    -webkit-animation: ftxt 2s forwards;
+}
+
+@keyframes ftxt {
+    0% {width: 550px;}
+    100% {width: 0;}
 }
 
 .secondTxt {
+    position: relative;
     text-align: center;
-    border: 1px solid green;
     width: 550px;
+}
+
+.box-animated-stxt {
+    position: absolute;
+    width: 0;
+    height: 140px;
+    background-color: gold;
+    z-index: 1000;
+    animation: ftxt 3s forwards;
+    -webkit-animation: ftxt 3s forwards;
+    border-radius: 0px 10px 10px 0px;
+}
+
+@keyframes stxt {
+    0% {width: 550px;}
+    100% {width: 0;}
 }
 
 .txt {
@@ -122,12 +152,55 @@ ul li a:hover {
 }
 
 
-@media screen and (max-width: 800px) {
-    .webName span {
-        font-size: 14px;
-        line-height: 2.3;
+@media screen and (max-width: 600px) {
+    .intro-box {
+        width: 400px;
+        height: 400px;
+        display: flex;
     }
-    li {font-size: 12px; margin: 3px; }
+    
+    .firstTxt {
+        position: relative;
+        text-align: center;
+        width: 550px;
+    
+    }
+    
+    .box-animated-ftxt {
+        position: absolute;
+        height: 140px;
+        background-color: gold;
+        border-radius: 0px 10px 10px 0px;
+        z-index: 1000;
+        animation: ftxt 2s forwards;
+        -webkit-animation: ftxt 2s forwards;
+    }
+    
+    @keyframes ftxt {
+        0% {width: 550px;}
+        100% {width: 0;}
+    }
+    
+    .secondTxt {
+        position: relative;
+        text-align: center;
+        width: 550px;
+    }
+    
+    .box-animated-stxt {
+        position: absolute;
+        width: 0;
+        height: 80px;
+        background-color: gold;
+        z-index: 1000;
+        animation: ftxt 3s forwards;
+        -webkit-animation: ftxt 3s forwards;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    .txt {
+        font-size: 70px;
+    }
 }
 
 .section-wrapper {    
@@ -152,8 +225,8 @@ ul li a:hover {
     width: 100%;
     height: 400px;
     background-color: gold;
-    animation: box 2s forwards;
-    -webkit-animation: box 2s forwards;
+    animation: box 2s 5s forwards;
+    -webkit-animation: box 2s 5s forwards;
 }
 
 
@@ -179,24 +252,26 @@ ul li a:hover {
     to{width: 0;}
 }
 
-@media screen and (max-width: 600px){
-    section {
-        height: 200px;
-        position: relative;
-        text-align: center;
-}
-    .sectionBox {
-        text-align: center;
-        width: 300px;
-    }
-    section h1 {
-        text-align: center;
-        font-size: 30px;
-    }
+/*media queries for phone*/
 
+@media screen and (max-width: 600px){
+    .section-wrapper {    
+        width: 400px;
+        top: 40vh;
+    }
+    .boxAnimated {
+        height: 200px;
+    }
+    .sectionBox {
+        width: 400px;
+    }
+    .sectionBox h1 {
+        font-size: 20px;
+    }
     .sectionBox p {
         font-size: 20px;
     }
+    
 }
 
 
