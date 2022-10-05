@@ -106,11 +106,13 @@ ul li a:hover {
     position: relative;
     text-align: center;
     width: 550px;
+    overflow: hidden;
 
 }
 
 .box-animated-ftxt {
     position: absolute;
+    width: 550px;
     height: 140px;
     background-color: gold;
     border-radius: 0px 10px 10px 0px;
@@ -120,8 +122,8 @@ ul li a:hover {
 }
 
 @keyframes ftxt {
-    0% {width: 550px;}
-    100% {width: 0;}
+    from {right: 0;}
+    to {right: 550px;}
 }
 
 .secondTxt {
