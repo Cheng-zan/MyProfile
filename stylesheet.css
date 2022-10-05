@@ -115,8 +115,8 @@ ul li a:hover {
     background-color: gold;
     border-radius: 0px 10px 10px 0px;
     z-index: 1000;
-    animation: ftxt 2s forwards;
-    -webkit-animation: ftxt 2s forwards;
+    animation: ftxt 2s .3s forwards;
+    -webkit-animation: ftxt 2s .3s forwards;
 }
 
 @keyframes ftxt {
@@ -137,9 +137,9 @@ ul li a:hover {
     height: 140px;
     background-color: gold;
     z-index: 1000;
-    animation: stxt 2s forwards;
+    animation: stxt 2s .3s forwards;
     border-radius: 10px 0px 0px 10px;
-    -webkit-animation: stxt 2s forwards;
+    -webkit-animation: stxt 2s .3s forwards;
 }
 
 @keyframes stxt {
