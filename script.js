@@ -11,3 +11,14 @@ function validateForm() {
 }
 
 
+window.onscroll = function() {scrollfunction()};
+
+function scrollfunction() {
+    if(document.documentElement.scrollTop > 200) {
+        document.getElementById("boxAnimated").className = "slide-animation";
+    } else {
+        document.getElementById("boxAnimated").className = "";
+    }
+}
+
+
