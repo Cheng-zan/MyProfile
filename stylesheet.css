@@ -128,22 +128,23 @@ ul li a:hover {
     position: relative;
     text-align: center;
     width: 550px;
+    overflow: hidden;
 }
 
 .box-animated-stxt {
     position: absolute;
-    width: 0;
+    width: 550px;
     height: 140px;
     background-color: gold;
     z-index: 1000;
-    animation: ftxt 3s forwards;
-    -webkit-animation: ftxt 3s forwards;
-    border-radius: 0px 10px 10px 0px;
+    animation: stxt 2s forwards;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-animation: stxt 2s forwards;
 }
 
 @keyframes stxt {
-    0% {width: 550px;}
-    100% {width: 0;}
+    from {left:0;}
+    to {left: 550px;}
 }
 
 .txt {
