@@ -9,28 +9,30 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 10px;
-}
+}*/
 
   /* Track */
-::-webkit-scrollbar-track {
+/*::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
-}
+}*/
 
   /* Handle */
-::-webkit-scrollbar-thumb {
+/*::-webkit-scrollbar-thumb {
     background: grey; 
     border-radius: 10px;
 }
 
-  /* Handle on hover */
+/* Handle on hover 
 ::-webkit-scrollbar-thumb:hover {
     background: goldenrod; 
-}
+}*/
 
 /*webName nav style in html.index*/
 nav {
@@ -99,20 +101,27 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.box-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .firstTxt {
     position: relative;
     text-align: center;
-    width: 550px;
+    width: 570px;
     overflow: hidden;
-
 }
 
 .box-animated-ftxt {
     position: absolute;
-    width: 550px;
+    width: 570px;
     height: 140px;
     background-color: gold;
     border-radius: 0px 10px 10px 0px;
@@ -123,164 +132,94 @@ ul li a:hover {
 
 @keyframes ftxt {
     from {right: 0;}
-    to {right: 550px;}
+    to {right: 570px;}
 }
 
 .secondTxt {
     position: relative;
     text-align: center;
-    width: 550px;
+    width: 570px;
     overflow: hidden;
 }
 
 .box-animated-stxt {
     position: absolute;
-    width: 550px;
+    width: 570px;
     height: 140px;
     background-color: gold;
     z-index: 1000;
     animation: stxt 2s .3s forwards;
     border-radius: 10px 0px 0px 10px;
     -webkit-animation: stxt 2s .3s forwards;
-}
 
-@keyframes stxt {
-    from {left:0;}
-    to {left: 550px;}
 }
 
 .txt {
     color: white;
     font-size: 120px;
+    text-align: center;
+}
+
+@keyframes stxt {
+    from {left:0;}
+    to {left: 570px;}
 }
 
 
-@media screen and (max-width: 600px) {
-    .intro-box {
-        width: 470px;
-        height: 400px;
-        display: flex;
-    }
-    
-    .firstTxt {
-        position: relative;
-        text-align: center;
-        width: 550px;
-    
-    }
-    
-    .box-animated-ftxt {
-        position: absolute;
-        height: 140px;
-        background-color: gold;
-        border-radius: 0px 10px 10px 0px;
-        z-index: 1000;
-        animation: ftxt 2s forwards;
-        -webkit-animation: ftxt 2s forwards;
-    }
-    
-    @keyframes ftxt {
-        0% {width: 550px;}
-        100% {width: 0;}
-    }
-    
-    .secondTxt {
-        position: relative;
-        text-align: center;
-        width: 550px;
-    }
-    
-    .box-animated-stxt {
-        position: absolute;
-        width: 0;
-        height: 80px;
-        background-color: gold;
-        z-index: 1000;
-        animation: ftxt 3s forwards;
-        -webkit-animation: ftxt 3s forwards;
-        border-radius: 0px 10px 10px 0px;
-    }
-    
-    .txt {
-        font-size: 70px;
-    }
-}
-
-.section-wrapper {    
+.section-wrapper {
+    width: 100%;
+    height: 500px;
     position: relative;
-    width: 900px;
-    height: fit-content;
-    top: 70vh;
-    z-index: -1;
-    margin: auto;
-    overflow: hidden;
+    top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .sectionBox {
-    width: 820px;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    border-bottom: 4px solid red;
+    width: fit-content;
     margin: auto;
-    padding: 2% 5%;
+}
+
+.par-txt {
+    font-size: 2rem;
+    margin: 10px;
+    text-align: justify;
 }
 
 #boxAnimated {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background-color: gold;
-
-}
-
-.slide-animation {
-    animation: box 2s 5s forwards;
-    -webkit-animation: box 2s .2s forwards;
+    height: 100%;
+    width: 50%;
+    background-color: red;
 }
 
 
-.sectionBox h1 {
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-    border-bottom: 5px solid goldenrod;
-    color: white;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.sectionBox p {
-    color: white;
-    font-size: 40px;
-    text-align: justify;
-    margin: 10px;
-}
-
-@keyframes box {
-    from{left:0;}
-    to{left: 920px;}
-}
-
-/*media queries for phone*/
-
-@media screen and (max-width: 600px){
-    .section-wrapper {
-        width: 470px;
-        top: 300px;
+@media only screen and (max-width: 600px){
+    .box-wrapper {
+        width: 500px;
     }
-    .boxAnimated {
-        height: 260px;
+    .txt {
+        font-size: 70px;
     }
+
     .sectionBox {
-        width: 400px;
+        width: 80%;
     }
-    .sectionBox h1 {
-        font-size: 20px;
+    h1 {
+        font-size: 30px;
     }
-    .sectionBox p {
-        font-size: 20px;
+
+    .par-txt {
+        font-size: 1.5rem;
     }
-    
 }
-
-
-
