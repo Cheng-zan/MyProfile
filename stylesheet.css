@@ -50,10 +50,6 @@ nav {
     text-decoration: none;
     color: white;
     transition: .5s ease;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
 }
 
 .headLeftTag > span > a:hover {
@@ -63,10 +59,6 @@ nav {
 .headLeftTag > span > a:active {
     color: gold;
     transition: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
 }
 
 ul {
@@ -93,7 +85,68 @@ ul li a:hover {
     color: goldenrod;
 }
 
-.intro-box {
+header {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.img-box {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid green;
+}
+
+.img-profile {
+    background-image: url("./images/muzan.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.txt-container {
+    width: 400px;
+    height: 200px;
+    border: 1px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .intro-box {
     position: relative;
     top: 20vh;
     width: 100%;
@@ -225,4 +278,4 @@ h1 {
     .par-txt {
         font-size: 1.5rem;
     }
-}
+} */

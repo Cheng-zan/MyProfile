@@ -11,7 +11,7 @@ function validateForm() {
 }
 
 
-window.onscroll = function() {scrollfunction()};
+/*window.onscroll = function() {scrollfunction()};
 
 function scrollfunction() {
     if(document.documentElement.scrollTop > 200) {
@@ -19,6 +19,4 @@ function scrollfunction() {
     } else {
         document.getElementById("boxAnimated").className = "";
     }
-}
-
-
+}*/
