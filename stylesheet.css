@@ -219,16 +219,13 @@ header {
     .box-container {
         width: 400px;
     }
-
     .img-box {
         height: 150px;
     }
-
     .img-profile {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
-
     .txt-container {
         width: 100%;
         padding: 20px;
@@ -237,39 +234,31 @@ header {
         align-items: center;
         flex-direction: column;
     }
-
     .txt {
         font-size: 1em;
     }
-
     .par-txt {
         font-size: 20px;
-
     }
 
-    
     .skill-box {
         width: 350px;
         height: 200px;
     }
-    
     .circle-1 {
         width: 100px;
         height: 100px;
-        font-size: 13px;
-}
-    
+        font-size: 12px;
+    }
     .circle-2 {
         width: 100px;
         height: 100px;
-        font-size: 13px;
-
+        font-size: 12px;
     }
-    
     .circle-3 {
         width: 100px;
         height: 100px;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
