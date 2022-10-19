@@ -285,9 +285,9 @@ header {
     }
 }
 
-/*not support screen width under 400px*/
+/*not support screen width under 380px*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
 
     body {
         display: none;
