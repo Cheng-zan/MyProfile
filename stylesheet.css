@@ -223,6 +223,11 @@ header {
     .img-box {
         width: 100%;
     }
+
+    .img-profile {
+        width: 200px;
+        height: 200px;
+    }
     .txt-container {
         width: 100%;
         display: flex;
