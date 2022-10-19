@@ -211,7 +211,7 @@ header {
     font-family: 'Times New Roman', Times, serif;
 }
 
-
+/*tablet width*/
 @media screen and (max-width: 992px) {
     header {
         height: 800px;
@@ -237,6 +237,7 @@ header {
     }
 }
 
+/*Phone width*/
 @media screen and (max-width: 600px) {
     
     .box-container {
@@ -293,162 +294,3 @@ header {
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .intro-box {
-    position: relative;
-    top: 20vh;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid green;
-}
-
-.box-wrapper {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid green;
-}
-
-.firstTxt {
-    position: relative;
-    text-align: center;
-    width: 570px;
-    overflow: hidden;
-}
-
-.box-animated-ftxt {
-    position: absolute;
-    width: 570px;
-    height: 140px;
-    background-color: gold;
-    border-radius: 0px 10px 10px 0px;
-    z-index: 1000;
-    animation: ftxt 2s .3s forwards;
-    -webkit-animation: ftxt 2s .3s forwards;
-}
-
-@keyframes ftxt {
-    from {right: 0;}
-    to {right: 570px;}
-}
-
-.secondTxt {
-    position: relative;
-    text-align: center;
-    width: 570px;
-    overflow: hidden;
-}
-
-.box-animated-stxt {
-    position: absolute;
-    width: 570px;
-    height: 140px;
-    background-color: gold;
-    z-index: 1000;
-    animation: stxt 2s .3s forwards;
-    border-radius: 10px 0px 0px 10px;
-    -webkit-animation: stxt 2s .3s forwards;
-
-}
-
-.txt {
-    color: white;
-    font-size: 120px;
-    text-align: center;
-}
-
-@keyframes stxt {
-    from {left:0;}
-    to {left: 570px;}
-}
-
-
-.section-wrapper {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    top: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.sectionBox {
-    width: 50%;
-    height: fit-content;
-    text-align: center;
-}
-
-h1 {
-    font-size: 50px;
-    border-bottom: 4px solid red;
-    width: fit-content;
-    margin: auto;
-}
-
-.par-txt {
-    font-size: 2rem;
-    margin: 10px;
-    text-align: justify;
-}
-
-#boxAnimated {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    background-color: red;
-}
-
-
-@media only screen and (max-width: 600px){
-
-    .box-wrapper {
-        width: 500px;
-    }
-    .txt {
-        font-size: 70px;
-    }
-
-    .sectionBox {
-        width: 80%;
-    }
-    h1 {
-        font-size: 30px;
-    }
-
-    .par-txt {
-        font-size: 1.5rem;
-    }
-} */
