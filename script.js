@@ -10,7 +10,6 @@ function validateForm() {
     }
 }
 
-
 /*window.onscroll = function() {scrollfunction()};
 
 function scrollfunction() {
@@ -20,3 +19,10 @@ function scrollfunction() {
         document.getElementById("boxAnimated").className = "";
     }
 }*/
+
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector("nav ul");
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle("slide");
+})
