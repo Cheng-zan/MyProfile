@@ -9,11 +9,14 @@ body {
     background-size: cover;
     background-color: black;
     color: white;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'Quicksand', sans-serif;
 }
 
-
+.bg-body {
+    overflow-x: hidden;
+    width: 100vw;
+}
 
 nav {
     display: flex;
@@ -26,6 +29,7 @@ nav {
 
 nav .logo {
     margin-left: 20px;
+    z-index: -1000;
 }
 
 nav ul {
@@ -40,26 +44,34 @@ nav ul a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+    transition: .3s linear;
+}
+
+nav ul a:hover {
+    color: rgb(218, 165, 32);
+    border-bottom: 1px solid goldenrod;
 }
 
 .menu-toggle {
     position: relative;
     width: 28px;
-    height: 20px;
+    height: 21px;
     margin-right: 10px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-}
+}   
 
 .menu-toggle span {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: white;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
     transform-origin: 0 0;
     transition: all 0.4s;
 }
+
 
 .menu-toggle input {
     position: absolute;
@@ -80,7 +92,7 @@ nav ul a {
 }
 
 .menu-toggle input:checked ~ span:last-child{
-    transform: rotate(-45deg) translate(-3px, -1px); 
+    transform: rotate(-45deg) translate(-2px, -2px); 
 }
 
 
@@ -91,6 +103,7 @@ nav ul a {
 }
 
 @media screen and (max-width: 576px) {
+
     nav {
         overflow-x: hidden;
     }
@@ -111,11 +124,12 @@ nav ul a {
 
     nav .menu-toggle {
         display: flex;
-    } 
-
+    }
 
     nav ul.slide {
         transform: translateX(0);
     }
 
 }
+
+
