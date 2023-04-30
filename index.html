@@ -58,6 +58,10 @@
                 font-size: 30px;
             }
 
+            .aboutmecontainer {
+                margin: 20px;
+            }
+
             .picturebox {
                 width: 300px;
                 height: 300px;
@@ -88,19 +92,22 @@
 
             @media screen and (max-width: 860px){
                 .bio-profile {
-                    width: 200px;
-                    height: 200px;
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 40px;
+                }
+                .intro-box {
+                    text-align: center;
                 }
                 .intro-box p:nth-child(1) {
-                    font-size: 35px;             
+                    font-size: 40px;             
                 }
                 .intro-box p:nth-child(2) {
-                    font-size: 15px;
+                    font-size: 20px;
                 }
                 .aboutme {
                     height: 400px;
                 }
-
                 .aboutme h1 {
                     font-size: 40px;
                 }
@@ -115,7 +122,10 @@
                     box-shadow: 0px 0px 20px aqua;
                 }
                 header {
-                    height: 400px;
+                    height: 900px;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex-flow: column-reverse;
                 }
             }
         </style>
